@@ -33,7 +33,7 @@ streamlit.text(fruityvice_response.json())
 
 import snowflake.connector
 
-import snowflake.connestor
+
 
 
 
