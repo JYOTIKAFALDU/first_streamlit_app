@@ -31,7 +31,7 @@ streamlit.dataframe(fruityvice_normalized)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
-import snowflake.connector
+''' import snowflake.connector'''
 
 
 '''my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
