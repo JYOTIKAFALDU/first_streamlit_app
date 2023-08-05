@@ -33,7 +33,7 @@ streamlit.dataframe(fruityvice_normalized)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
-streamlit.stop()
+
 
 
 
@@ -60,5 +60,6 @@ streamlit.header("The fruit load list contains:")
 streamlit.text(my_data_row)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
+streamlit.stop()
 my_cur.execute("insert into fruit_load_list values ('" + add_my_fruit + "')")
 
